@@ -19,7 +19,7 @@ public class PersonRest {
 	@Autowired
 	private PersonRepository personRepo; 
 
-	@GetMapping(value = "user")
+	@GetMapping(value = "login")
 	public Iterable<Person> getAllPerson(){
 		return personRepo.findAll();
 	}
